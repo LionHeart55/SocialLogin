@@ -21,6 +21,8 @@ This project is an example of how to implement social login feature using spring
 
 5) JQuery-UI (front end)
 
+![ScreenShot](./SocialLogin.png?raw=true "screenshot")
+
 ## Prerequisites
 
 This application assumes that you have already created the Facebook,Twitter and Linkedin application used by this application. Once you registered application with social provider developer site,you will api key  and secret as follows
