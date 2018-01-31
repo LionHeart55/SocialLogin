@@ -9,6 +9,18 @@ This project is an example of how to implement social login feature using spring
 
 3) User registration via form.
 
+## Packages implemented
+
+1) Spring Security 
+
+2) Spring Social
+
+3) Spring MVC
+
+4) Hibernate (over MySql)
+
+5) JQuery-UI (front end)
+
 ## Prerequisites
 
 This application assumes that you have already created the Facebook,Twitter and Linkedin application used by this application. Once you registered application with social provider developer site,you will api key  and secret as follows
