@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	font-family: 'Rokkitt', serif;
+	font-size:100%;		
+	background-color: rgb(13, 151, 214);
+	background: url(images/linear_bg_2.png);
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(13, 151, 214)), to(#2F2727));
+	background: -webkit-linear-gradient(top, #2F2727, rgb(13, 151, 214));
+	background: -moz-linear-gradient(top, #2F2727, rgb(13, 151, 214));
+	background: -ms-linear-gradient(top, #2F2727, rgb(13, 151, 214));
+	background: -o-linear-gradient(top, #2F2727, rgb(13, 151, 214));
+}
+
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+
+.wborder { border: 1px solid  #ccc; }
+.inlines {	position: relative; display: inline-block; }

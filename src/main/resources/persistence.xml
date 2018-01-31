@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+   <persistence-unit name="dataUnit">
+     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+     <non-jta-data-source>jdbc/dataDS</non-jta-data-source>
+       <!-- class>model.User</class -->
+       <class>zone.cognitive.model.User</class>
+       <class>zone.cognitive.model.Role</class>
+       
+       <properties>
+         <property name="hibernate.cache.use_second_level_cache" value="false" /> <!-- true"/ -->
+         <property name="hibernate.cache.use_query_cache" value="false"/>
+         <!-- property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory"/>
+         <property name="net.sf.ehcache.configurationResourceName" value="/ehcache-config.xml"/ -->
+         <property name="hibernate.dialect" value="${hibernate.dialect}"/>
+         <property name="hibernate.hbm2ddl.auto" value="none" />
+     	 <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/myapp"/>
+         <property name="javax.persistence.jdbc.user" value="root"/>
+         <property name="javax.persistence.jdbc.password" value="groot"/> 
+         <property name="hibernate.show_sql" value="true"/>
+       </properties>
+
+   </persistence-unit>
+</persistence>
